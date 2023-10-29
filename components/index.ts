@@ -4,6 +4,8 @@ import Button from './Button';
 import SearchFilter from './SearchFilter';
 import SearchManufacturer from './SearchManufacturer';
 import Filter from './Filter';
+import CarCard from './CarCard';
+import CarDetails from './CarDetails';
 import Footer from './Footer';
 
 export {
@@ -13,5 +15,7 @@ export {
     SearchFilter,
     SearchManufacturer,
     Filter,
+    CarCard,
+    CarDetails,
     Footer
 }
