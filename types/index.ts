@@ -6,8 +6,7 @@ export interface ButtonProps {
     buttonType?: 'button' | 'submit';
     rightIcon?: string;
     isDisabled?: boolean;
-    handleClick?:
-        MouseEventHandler<HTMLButtonElement>;
+    handleClick?: MouseEventHandler<HTMLButtonElement>;
 }
 
 export interface FilterProps {
