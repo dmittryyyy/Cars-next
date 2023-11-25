@@ -2,8 +2,16 @@ import { Hero, SearchFilter, Filter, CarCard } from '@/components';
 
 import { fetchCars } from '@/utils';
 
-export default async function Home() {
-    const allCars = await fetchCars();
+import { yearsOfProduction, fuels } from '@/constants';
+
+export default async function Home({ searchParams }) {
+    const allCars = await fetchCars({
+        manufacturer: searchParams.manufacturer || '',
+        model: searchParams.model || '',
+        fuel: searchParams.fuel || '',
+        limit: searchParams.limit || 10,
+        year: searchParams.year || 2023,
+    });
 
     const isDataEmpty = !Array.isArray(allCars) || allCars.length < 1 || !allCars;
 
@@ -25,8 +33,8 @@ export default async function Home() {
                     <SearchFilter/>
 
                     <div className="home__filter-container">
-                        <Filter title='fuel'/>
-                        <Filter title='year'/>
+                        <Filter title='fuel' options={fuels} />
+                        <Filter title='year' options={yearsOfProduction} />
                     </div>
                 </div>
 

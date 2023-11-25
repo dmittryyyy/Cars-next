@@ -11,6 +11,12 @@ export interface ButtonProps {
 
 export interface FilterProps {
     title: string;
+    options: OptionsProps[],
+}
+
+export interface OptionsProps {
+    title: string;
+    value: string;
 }
 
 export interface SearchManufacturerProps {
@@ -31,4 +37,13 @@ export interface CarProps {
     model: string;
     transmission: string;
     year: number;
+}
+
+
+export interface FilterCarProps {
+    manufacturer: string,
+    model: string,
+    fuel: string,
+    limit: number,
+    year: number,
 }
