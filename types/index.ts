@@ -49,5 +49,5 @@ export interface FilterCarProps {
 
 export interface ShowMoreProps {
     pageNumber: number;
-    isNExt: boolean;
+    isNext: boolean;
 }
