@@ -39,11 +39,15 @@ export interface CarProps {
     year: number;
 }
 
-
 export interface FilterCarProps {
-    manufacturer: string,
-    model: string,
-    fuel: string,
-    limit: number,
-    year: number,
+    manufacturer: string;
+    model: string;
+    fuel: string;
+    limit: number;
+    year: number;
+}
+
+export interface ShowMoreProps {
+    pageNumber: number;
+    isNExt: boolean;
 }

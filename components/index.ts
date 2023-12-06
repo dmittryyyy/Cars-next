@@ -6,6 +6,7 @@ import SearchManufacturer from './SearchManufacturer';
 import Filter from './Filter';
 import CarCard from './CarCard';
 import CarDetails from './CarDetails';
+import ShowMore from './ShowMore';
 import Footer from './Footer';
 
 export {
@@ -17,5 +18,6 @@ export {
     Filter,
     CarCard,
     CarDetails,
+    ShowMore,
     Footer
 }
